@@ -2,18 +2,42 @@
     font-size: 15px;
     font-weight: bold;
     width: 200px;
-    height: 70px;
-    border-radius: 10px;
+    height: 65px;
+    border-radius: 5px;
     border: none;
     transition-duration: 0.4s;
 }
 
-.btn-info {
+.btn-info, .btn-download {
     color: white;
     background-color: #1d809f;
 }
-.btn-info:hover {
+.btn-info:hover, .btn-download:hover {
     background-color: #1a6982;
     cursor: pointer;
 }
 
+.btn-offer, .btn-lookatme {
+    color: white;
+    background-color: #343a40;
+}
+
+.btn-offer:hover, .btn-lookatme:hover {
+    background-color: #25292d;
+    cursor: pointer;
+}
+
+.btn-lookatme {
+    width: 150px;
+}
+
+.btn-clickme {
+    color: black;
+    background-color: white;
+    width: 150px;
+}
+
+.btn-clickme:hover {
+    cursor: pointer;
+    background-color: #dae0e5;
+}
