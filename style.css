@@ -45,8 +45,10 @@ html, body {
 
 #sect2 {
     background-color: white;
+    width: 100%;
     text-align: center;
-    padding: 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
     font-size: 19px;
 }
 
@@ -56,9 +58,12 @@ html, body {
 
 #sect3 {
     background-color: #1d809f;
-    padding: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     font-size: 14;
     color: white;
+    overflow: auto;
+    text-align: center;
 }
 
 table {
@@ -66,12 +71,17 @@ table {
     margin-right: auto;
 }
 
-#sect3 table {
-    padding-top: 40px;
-    border-collapse: separate;
-    border-spacing: 20px 0;
-    text-align: center;
+#sect3 li {
+    display: inline-block;
+    padding-right: 20px;
+    padding-bottom: 40px;
     color: #b7d6e2;
+    text-align: center;
+    margin: 0;
+}
+
+#sect3 ul {
+    padding-top: 40px;
 }
 
 .circle-white, .circle-blue {
@@ -130,7 +140,8 @@ table {
     font-size: 55px;
     font-weight: bold;
     text-align: center;
-    padding: 200px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 #sect4 p {
@@ -140,24 +151,29 @@ table {
 
 #sect5 {
     background-color: white;
-    margin: 0;
-    padding: 100px; 
+    padding: 100px 0;
     text-align: center;
+    margin: 0 auto;
 }
+
 #recent-projects {
     margin: 0;
     font-size: 45px;
     font-weight: bold;
     padding-bottom: 50px;
 }
+
+#sect5 li {
+    display: inline-block;
+    margin: 0;
+    text-align: left;
+}
+
+
 #sect5 table {
     border-collapse: separate;
     border-spacing: 0;
     text-align: left;
-}
-
-.project-captions {
-    position: absolute;
 }
 
 .title5 {
@@ -172,23 +188,39 @@ table {
     font-weight: lighter;
 }
 
+#box-container {
+    font-size: 0;
+}
+
 .box {
     width: 555px;
     height: 370px;
     position: relative;
     background: #155d74;
     overflow: hidden;
+    display: inline-block;
+    margin: 0;
+    text-align: left;
+
+    max-width: 100%;
+    height: auto;
+    
 }
 
 .box img {
     position: relative;
     transition: opacity .75s;
+
+    max-width: 100%;
+    height: auto;
+    
 }
 
 .box .title5 {
     position: absolute;
     bottom: 128px;
     left: 78px;
+    
 }
 
 .box .desc5 {
@@ -207,6 +239,7 @@ table {
     box-sizing: border-box;
     transition: border .25s;
     z-index: 1;
+    margin: 0;
 }
 
 .box:hover {
@@ -221,7 +254,8 @@ table {
 }
 
 #sect6 {
-    padding: 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
     background-color: #1d809f;
     text-align: center;
     color: white;
@@ -236,6 +270,12 @@ table {
     padding-right: 25px;
 }
 
+@media screen and (max-width: 1110px) {
+  .box {
+    margin: 5px;
+  }
+}
+
 #map {
     width: 100%;
     height: 525px;
@@ -243,7 +283,8 @@ table {
 
 #footer {
     text-align: center;
-    padding: 70px;
+    padding-top: 70px;
+    padding-bottom: 70px;
     background-color: white;
 }
 

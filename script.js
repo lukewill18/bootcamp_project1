@@ -4,7 +4,3 @@ function initMap() {
         document.getElementById('map'), {zoom: 15, center: portal});
     var marker = new google.maps.Marker({position: portal, map: map});
 }
-
-$(document).ready(function() {
-    $('#nav').localScroll({duration:800});
-});
