@@ -13,7 +13,6 @@ html, body {
     width: 100%;
     height: 100%;
     text-align: center;
-    
 }
 
 #sect2 {
@@ -23,7 +22,7 @@ html, body {
     font-size: 19px;
 }
 
-#blurb2 {
+#sect2 p {
     padding-bottom: 40px;
 }
 
@@ -32,7 +31,65 @@ html, body {
     padding: 100px;
     font-size: 14;
     color: white;
+}
 
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sect3 table {
+    padding-top: 40px;
+    border-collapse: separate;
+    border-spacing: 20px 0;
+    text-align: center;
+    color: #b7d6e2;
+}
+
+.circle-white, .circle-blue {
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+}
+
+.circle-white {
+    height: 120px;
+    width: 120px;
+    background-color: white;
+}
+
+#sect3 i {
+    font-size: 40px;
+    position: absolute;
+    z-index: 1;
+    color: #1d809f;
+}
+
+#sect3 .fa-mobile-alt {
+    top: 40px;
+    left: 48px;
+}
+
+#sect3 .fa-pencil-alt, #sect3 .fa-thumbs-up {
+    top: 38px;
+    left: 42px;
+}
+
+#sect3 .fa-moon {
+    font-size: 20px;
+}
+
+#moon1 {
+    transform: rotate(270deg);
+    top: 50px;
+    left: 41px;
+}
+
+#moon2 {
+    transform: scaleX(-1);
+    transform: rotate(310deg);
+    top: 50px;
+    right: 41px;
 }
 
 #sect4 {
@@ -48,23 +105,10 @@ html, body {
     padding: 200px;
 }
 
-#blurb4 {
+#sect4 p {
     margin: 0;
     padding-bottom: 20px;
 }
-
-table {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#offer-table {
-    border-collapse: separate;
-    border-spacing: 20px 0;
-    text-align: center;
-    color: #b7d6e2;
-}
-
 
 #sect5 {
     background-color: white;
@@ -78,7 +122,7 @@ table {
     font-weight: bold;
     padding-bottom: 50px;
 }
-#project-table {
+#sect5 table {
     border-collapse: separate;
     border-spacing: 0;
     text-align: left;
@@ -177,19 +221,47 @@ table {
 
 #footer li {
     display: inline;
-    padding-right: 15px;
-}
-
-#footer li:hover {
-    cursor: pointer;
+    padding-right: 20px;
 }
 
 #footer p {
-    padding-top: 20px;  
+    padding-top: 25px;  
     font-size: 13px;
     font-weight: lighter;
 }
 
+.circle-blue {
+    height: 65px;
+    width: 65px;
+    background-color: #1d809f;
+}
+
+.circle-blue:hover {
+    cursor: pointer;
+    background-color: #17708c;
+}
+
+#footer i {
+    color: white;
+    font-size: 22px;
+    position: absolute;
+    z-index: 1;
+}
+
+#footer .fa-facebook-f {
+    top: 20px;
+    left: 26px;
+}
+
+#footer .fa-twitter {
+    top: 20px;
+    left: 23px;
+}
+
+#footer .fa-github {
+    top: 19px;
+    left: 22px;
+}
 h1 {
     font-size: 90px;
     font-weight: bold;
@@ -198,7 +270,7 @@ h1 {
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 47px;
     text-align: center;
     margin: 0;
 }

@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>Project 1</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="bootstrap.css"/>
   <!-- put your own style as the last stylesheet so it overrides previous files-->
@@ -25,19 +26,27 @@
 
     <div id="sect2">
         <h4>Stylish Portfolio is the perfect theme for your next project!</h4>
-        <p id="blurb2">This theme features a flexible, UX friendly sidebar menu and stock photos from our friends at Unsplash!</p>
+        <p>This theme features a flexible, UX friendly sidebar menu and stock photos from our friends at Unsplash!</p>
         <button class="btn btn-offer">What We Offer</button>
     </div>
 
     <div id="sect3">
         <h6>SERVICES</h6>
         <h2>What We Offer</h2>
-        <table id="offer-table">
+        <table>
             <tr>
-                <td><img src="https://i.gyazo.com/4e779461f984fc8f354ad804de0a6b6d.png" height=150 width=150/></td>
-                <td><img src="https://i.gyazo.com/0672f34900f826a545d2c76baa16fc4f.png" height=140 width=130/></td>
-                <td><img src="https://i.gyazo.com/d6ea0cbb08537e4c48babecdb955adb2.png" height=150 width=150/></td>
-                <td><img src="https://i.gyazo.com/731740c7839604ad6d8524df6b4523d7.png" heihgt=150 width=150/></td>
+                <td>
+                    <div class="circle-white"><i class="fas fa-mobile-alt"></i></div>
+                </td>
+                <td>
+                    <div class="circle-white"><i class="fas fa-pencil-alt"></i></div>    
+                </td>
+                <td>
+                    <div class="circle-white"><i class="far fa-thumbs-up"></i></div>
+                </td>
+                <td>
+                    <div class="circle-white"><i class="far fa-moon" id="moon1"></i><i class="far fa-moon" id="moon2"></i></div>
+                </td>
             </tr>
             <tr>
                 <td><h5>Responsive</h5></td>
@@ -55,14 +64,14 @@
     </div>
 
     <div id="sect4">
-        <p id="blurb4">Welcome to <em>your</em><br>next website!</p>
+        <p>Welcome to <em>your</em><br>next website!</p>
         <button class="btn btn-download">Download Now!</button>
     </div>
 
     <div id="sect5">
         <h6>PORTFOLIO</h6>
         <p id="recent-projects">Recent Projects</p>
-        <table cellpadding=0 cellspacing=0 id="project-table">
+        <table cellpadding=0 cellspacing=0>
             <tr>
                 <td>
                     <div class="box">
@@ -105,19 +114,15 @@
             <li><button class="btn btn-lookatme">Look at Me!</button></li>
         </ul>
     </div>
-
-   <!-- <div id="sect7">
-        <img src="https://i.gyazo.com/86aad1be03f3e160484643cd8dd0d850.png" width=100% height=482px/>
-    </div>
--->
     <div id="map"></div>
- <div id="footer">
-    <ul>
-        <li> <img width=80px height=80px src="https://i.gyazo.com/00fde1c8278cd0e7190ef2c28502dace.png"></li>
-        <li> <img width=80px height=80px src="https://i.gyazo.com/bb57be8ef96d513b91e72d0789435166.png"></li>
-        <li> <img width=80px height=80px src="https://i.gyazo.com/b13118e8768684e33b683104fa524f9d.png"></li>
-    </ul>
-    <p>Copyright © Your Website 2017</p>
- </div>
+    
+    <div id="footer">
+        <ul>
+            <li><div class="circle-blue"><i class="fab fa-facebook-f"></i></div></li>
+            <li><div class="circle-blue"><i class="fab fa-twitter"></i></div></li>
+            <li><div class="circle-blue"><i class="fab fa-github"></i></div></li>
+        </ul>
+        <p>Copyright © Your Website 2017</p>
+    </div>
 </body>
 </html>
