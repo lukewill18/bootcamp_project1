@@ -10,26 +10,39 @@
   <link rel="stylesheet" href="bootstrap.css"/>
   <!-- put your own style as the last stylesheet so it overrides previous files-->
   <link rel="stylesheet" href="style.css"/>
- <script src="script.js"></script>
- <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbTVeaOOgzqpEoVNyXQ-d_uE8eyV6mRCU&callback=initMap">
-    </script>
 
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script> 
+  <script src="jquery.localscroll.js" type="text/javascript"></script> 
+  <script src="jquery.scrollTo.js" type="text/javascript"></script> 
+  <script src="script.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbTVeaOOgzqpEoVNyXQ-d_uE8eyV6mRCU&callback=initMap"></script>
 </head>
 
 <body>
+    
+    <div id="header">
+        <ul id="#nav">
+            <li id="site-title"><a href="#linktotop">START BOOTSTRAP</a></li>
+            <li><a href="#linktoabout">ABOUT</a></li>
+            <li><a href="#linktoservices">SERVICES</a></li>
+            <li><a href="#linktoportfolio">PORTFOLIO</a></li>
+            <li><a href="#linktocontact">CONTACT</a></li>
+        </ul>
+    </div>
     <div id="sect1">
+        <a name="linktotop"></a>
         <h1>Stylish Portfolio</h1>
         <h3>A Free Bootstrap Theme by Start Bootstrap</h3>
-        <button class= "btn btn-info">Find Out More</button>
+        <a href="#linktoabout"><button class="btn btn-info">Find Out More</button></a>
     </div>
-
+    <a name="linktoabout"></a>
     <div id="sect2">
         <h4>Stylish Portfolio is the perfect theme for your next project!</h4>
         <p>This theme features a flexible, UX friendly sidebar menu and stock photos from our friends at Unsplash!</p>
-        <button class="btn btn-offer">What We Offer</button>
+        <a href="#linktoservices"><button class="btn btn-offer">What We Offer</button></a>
     </div>
-
+    
+    <a name="linktoservices"></a>
     <div id="sect3">
         <h6>SERVICES</h6>
         <h2>What We Offer</h2>
@@ -65,43 +78,52 @@
 
     <div id="sect4">
         <p>Welcome to <em>your</em><br>next website!</p>
-        <button class="btn btn-download">Download Now!</button>
+        <a href="https://startbootstrap.com/template-overviews/stylish-portfolio/"><button class="btn btn-download">Download Now!</button></a>
     </div>
 
+    <a name="linktoportfolio"></a>
     <div id="sect5">
         <h6>PORTFOLIO</h6>
         <p id="recent-projects">Recent Projects</p>
         <table cellpadding=0 cellspacing=0>
             <tr>
                 <td>
+                    <a href="#linktotop">
                     <div class="box">
                         <div class="border-box"></div><img src="https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/img/portfolio-1.jpg" width=555px height=370px/>
                         <p class="title5">STATIONARY</p>
                         <p class="desc5">A yellow pencil with envelopes on a clean, blue<br>backdrop!</p>
                     </div>
+                    </a>
                 </td>
                 <td>
+                    <a href="#linktotop">
                     <div class="box">
                         <div class="border-box"></div><img src="https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/img/portfolio-2.jpg" width=555px height=370px/>
                         <p class="title5">ICE CREAM</p>
                         <p class="desc5">A dark blue background with a colored pencil,<br>a clip, and a tiny ice cream cone!</p>
                     </div>
+                    </a>
                 </td>
             </tr>
             <tr>
                 <td>
+                    <a href="#linktotop">
                     <div class="box">
                         <div class="border-box"></div><img src="https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/img/portfolio-3.jpg" width=555px height=370px/>
                         <p class="title5">STRAWBERRIES</p>
                         <p class="desc5">Strawberries are such a tasty snack, especially with<br>a little sugar on top!</p>
                     </div>
+                    </a>
                 </td>
                 <td>
+                    <a href="#linktotop">
                     <div class="box">
                         <div class="border-box"></div><img src="https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/img/portfolio-4.jpg" width=555px height=370px/>
                         <p class="title5">WORKSPACE</p>
                         <p class="desc5">A yellow workspace with some scissors, pencils,<br>and other objects.</p>
                     </div>
+                    </a>
                 </td>
             </tr>
         </table>
@@ -110,17 +132,18 @@
     <div id="sect6">
         <h4>The buttons below are impossible to resist...</h4>
         <ul>
-            <li><button class="btn btn-clickme">Click Me!</button></li>
-            <li><button class="btn btn-lookatme">Look at Me!</button></li>
+            <li><a href="#linktotop"><button class="btn btn-clickme">Click Me!</button></a></li>
+            <li><a href="#linktotop"><button class="btn btn-lookatme">Look at Me!</button></a></li>
         </ul>
     </div>
     <div id="map"></div>
     
+    <a name="linktocontact"></a>
     <div id="footer">
         <ul>
-            <li><div class="circle-blue"><i class="fab fa-facebook-f"></i></div></li>
-            <li><div class="circle-blue"><i class="fab fa-twitter"></i></div></li>
-            <li><div class="circle-blue"><i class="fab fa-github"></i></div></li>
+            <li><a href="#linktotop"><div class="circle-blue"><i class="fab fa-facebook-f"></i></div></a></li>
+            <li><a href="#linktotop"><div class="circle-blue"><i class="fab fa-twitter"></i></div></a></li>
+            <li><a href="#linktotop"><div class="circle-blue"><i class="fab fa-github"></i></div></a></li>
         </ul>
         <p>Copyright © Your Website 2017</p>
     </div>

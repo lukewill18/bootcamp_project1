@@ -4,6 +4,34 @@ html, body {
     margin: 0;
     font-family: "Source Sans Pro", Arial, Helvetica, "Times New Roman", sans-serif;
 }
+
+#header {
+    width: 100%;
+    background-color: black;
+    padding: 10px;
+    font-weight: bold;
+    position: fixed;
+    z-index: 2;
+}
+
+#header li {
+    display: inline;
+}
+
+#header a {
+    text-decoration: none;
+    color: white;
+}
+
+#site-title {
+    padding-left: 300px;
+    padding-right: 600px;
+}
+
+#header li:not(#site-title) {
+    padding-right: 40px;
+}
+
 #sect1 {
     background-color: #f9c530; 
     background-image: url(https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/img/bg-masthead.jpg);
