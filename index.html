@@ -20,8 +20,19 @@
 
 <body>
     
-    <div id="header">
-        <a href="#linktotop" id="site-title">START BOOTSTRAP</a>
+    <div id="header" class="header-display">
+        <div id="site-title-container">
+            <a href="#linktotop" id="site-title">START BOOTSTRAP</a>
+        </div>
+        <div id="dropdown" onclick="dropdownclick()"> <!--onclick="dropdownclick()" for javascript implementation-->
+            <i class="fas fa-bars"></i>
+        </div>
+        <div id="dropdown-links" class="dropdown-display">
+            <a id="drop-aboutlink" href="#linktoabout" onclick="dropdownclick()">ABOUT</a><br><br>
+            <a id="drop-serviceslink" href="#linktoservices" onclick="dropdownclick()">SERVICES</a><br><br>
+            <a id="drop-portfoliolink" href="#linktoportfolio" onclick="dropdownclick()">PORTFOLIO</a><br><br>
+            <a id="drop-contactlink" href="#linktocontact" onclick="dropdownclick()">CONTACT</a>
+        </div>
         <div id="links">
             <a id="aboutlink" href="#linktoabout">ABOUT</a>
             <a id="serviceslink" href="#linktoservices">SERVICES</a>
@@ -32,7 +43,6 @@
     <a name="linktotop"></a>
     <div id="sect1">
         <div id="sect1box">
-            
             <div id="sect1text">
                 <h1>Stylish Portfolio</h1>
                 <h3>A Free Bootstrap Theme by Start Bootstrap</h3>
@@ -80,49 +90,6 @@
     <div id="sect5">
         <h6>PORTFOLIO</h6>
         <p id="recent-projects">Recent Projects</p>
-        <!--
-        <table cellpadding=0 cellspacing=0>
-            <tr>
-                <td>
-                    <a href="#linktotop">
-                    <div class="box">
-                        <div class="border-box"></div><img src="https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/img/portfolio-1.jpg" width=555px height=370px/>
-                        <p class="title5">STATIONARY</p>
-                        <p class="desc5">A yellow pencil with envelopes on a clean, blue<br>backdrop!</p>
-                    </div>
-                    </a>
-                </td>
-                <td>
-                    <a href="#linktotop">
-                    <div class="box">
-                        <div class="border-box"></div><img src="https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/img/portfolio-2.jpg" width=555px height=370px/>
-                        <p class="title5">ICE CREAM</p>
-                        <p class="desc5">A dark blue background with a colored pencil,<br>a clip, and a tiny ice cream cone!</p>
-                    </div>
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="#linktotop">
-                    <div class="box">
-                        <div class="border-box"></div><img src="https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/img/portfolio-3.jpg" width=555px height=370px/>
-                        <p class="title5">STRAWBERRIES</p>
-                        <p class="desc5">Strawberries are such a tasty snack, especially with<br>a little sugar on top!</p>
-                    </div>
-                    </a>
-                </td>
-                <td>
-                    <a href="#linktotop">
-                    <div class="box">
-                        <div class="border-box"></div><img src="https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/img/portfolio-4.jpg" width=555px height=370px/>
-                        <p class="title5">WORKSPACE</p>
-                        <p class="desc5">A yellow workspace with some scissors, pencils,<br>and other objects.</p>
-                    </div>
-                    </a>
-                </td>
-            </tr>
-        </table> -->
         <div id="box-container">
             <a href="#linktotop">
                 <div class="box">

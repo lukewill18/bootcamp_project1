@@ -4,3 +4,8 @@ function initMap() {
         document.getElementById('map'), {zoom: 15, center: portal});
     var marker = new google.maps.Marker({position: portal, map: map});
 }
+
+function dropdownclick() {
+    document.getElementById("dropdown-links").classList.toggle("show-dropdown");
+    document.getElementById("header").classList.toggle("enlarge-header");
+}
