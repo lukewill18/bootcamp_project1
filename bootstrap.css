@@ -9,11 +9,11 @@
 }
 
 .btn-info, .btn-download {
-    color: white;
-    background-color: #1d809f;
+    color: black;
+    background-color: white;
 }
 .btn-info:hover, .btn-download:hover {
-    background-color: #1a6982;
+    background-color: grey;
     cursor: pointer;
 }
 

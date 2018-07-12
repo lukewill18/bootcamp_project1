@@ -45,10 +45,6 @@ html, body {
     color: grey;
 }
 
-#header-container {
-    border: 2px solid red;
-}
-
 #dropdown {
     position: absolute;
     height: 25px;
@@ -167,8 +163,8 @@ html, body {
 }
 
 #sect1 {
-    background-color: #f9c530; 
-    background-image: url(https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/img/bg-masthead.jpg);
+    background: linear-gradient(to right, #16193B, #35478C, #374140, #2A2C2B, #1E1E20);
+    /*background-image: url(https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/img/bg-masthead.jpg);*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -178,7 +174,19 @@ html, body {
     height: auto;
     text-align: center;
     margin: 0;
+    position: relative;
+    overflow: hidden;
 }
+
+#sect1 video {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 #sect1box {
     font-size: 0;
@@ -191,6 +199,7 @@ html, body {
 #sect1text {
     font-size: 100px;
     margin: 0 10px;
+    color: white;
 }
 
 @media screen and (max-width: 992px)
@@ -462,7 +471,7 @@ html, body {
     padding-right: 20px;
 }
 
-@media screen and (max-width: 1110px) {
+@media screen and (max-width: 1135px) {
   #box-container {
     padding: 0 13px;
   }
