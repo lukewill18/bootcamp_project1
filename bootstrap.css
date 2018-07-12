@@ -13,17 +13,17 @@
     background-color: white;
 }
 .btn-info:hover, .btn-download:hover {
-    background-color: grey;
+    background-color: rgb(185, 185, 185);
     cursor: pointer;
 }
 
 .btn-offer, .btn-lookatme {
     color: white;
-    background-color: #343a40;
+    background-color: black;
 }
 
 .btn-offer:hover, .btn-lookatme:hover {
-    background-color: #25292d;
+    background-color: #222222;
     cursor: pointer;
 }
 
