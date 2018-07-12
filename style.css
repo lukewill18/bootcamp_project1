@@ -23,15 +23,13 @@ html, body {
     display: inline;
 }
 
-#site-title-container {
-    height: 60px;
-}
 #site-title {
     margin: 0;
     position: absolute;
     left: 5.62%;
     top: 15px;   
 }
+
 
 #links {
     position: absolute;
@@ -43,12 +41,20 @@ html, body {
     padding-right: 20px;
 }
 
+#site-title:hover, #aboutlink:hover, #serviceslink:hover, #portfoliolink:hover, #contactlink:hover {
+    color: grey;
+}
+
+#header-container {
+    border: 2px solid red;
+}
+
 #dropdown {
     position: absolute;
     height: 25px;
     width: 35px;
     top: 10px;
-    right: 10%;
+    right: 5%;
     color: black;
     border: 2px solid white;
     border-radius: 5px;
@@ -56,8 +62,47 @@ html, body {
     text-align: center;
 }
 
-#dropdown:hover {
-    cursor: pointer;
+#nav {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    height: 50px;
+}
+
+#nav-btn {
+    font-size: 19px;
+    border: 2px solid white;
+    border-radius: 5%;
+    padding: 7px;
+    float: right;
+    display: none;
+    color: white;
+    position: absolute;
+    top: 5px;
+    right: 1%;
+}
+
+#nav-list {
+    float: right;
+    padding-right: 150px;
+    padding-top: 5px;
+    margin: 0;
+    list-style-type: none;
+    background: black;   
+}
+
+#nav-list li {
+    display: inline-block;
+    padding: 10px 10px;
+}
+
+#nav-list li a, #site-title {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
 
 #dropdown .fa-bars
@@ -101,6 +146,24 @@ html, body {
     #dropdown {
         visibility: visible;
     }
+    #nav-btn {
+        display: block;
+    }
+    .wrapper:hover #nav-list {
+        display: block;
+    }
+    #nav-list {
+        display: none;
+        padding-top: 50px;
+        padding-right: 0;
+        padding-left: 100%;
+    }
+    #nav-list li {
+        display: block;
+        text-align: right;
+        padding-right: 0;
+    }
+
 }
 
 #sect1 {
@@ -148,10 +211,12 @@ html, body {
 
 #sect2 h4 {
     margin: 0 10px;
+    margin-bottom: 10px;
 }
 
 #sect2 p {
     padding-bottom: 40px;
+    margin: 0 10px;
 }
 
 #sect3 {
@@ -174,20 +239,42 @@ html, body {
     text-align: center;
 }
 
+
 #sect3 ul {
     padding-top: 20px;
     padding-left: 0;
     padding-right: 0;
 }
 
+#sect3 li h5 {
+    margin-bottom: 8px;
+}
+
+#sect3 li p {
+    margin: 0;
+    padding: 0;
+}
+
 #sect3 .circle-white {
     margin: 10px 60px;
 }
 
-@media screen and (max-width: 885px) {
+@media screen and (max-width: 1170px) {
+    #sect3 li {
+        padding-right: 8.47%;
+        padding-left: 8.47%;
+    }
+}
+
+@media screen and (max-width: 740px) {
     #sect3 .circle-white {
         margin: 10px 100px;
     }
+    #sect3 li {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
 }
 
 .circle-white, .circle-blue {
@@ -275,26 +362,15 @@ html, body {
 }
 
 .text-container {
-    font-size: 100px;
+    position: absolute;
+    bottom: 23%;
+    left: 14.05%;
 }
 
 @media screen and (max-width: 437px) {
     .text-container {
         font-size: 80px;
     }
-}
-
-.title5 {
-    font-size: .14em;
-    font-weight: bold;
-    color: white;
-
-}
-
-.desc5 {
-    font-size: .19em;
-    color: white;
-    font-weight: lighter;
 }
 
 #box-container {
@@ -318,25 +394,25 @@ html, body {
 .box img {
     position: relative;
     transition: opacity .75s;
-
     max-width: 100%;
     height: auto;
     
 }
 
 .box .title5 {
-    position: absolute;
-    bottom: 34.59%;
-    left: 14.05%;
+    margin: 10px 0;
     padding-right: 50px;
-    padding-bottom: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
 }
 
 .box .desc5 {
-    position: absolute;
-    bottom: 18.91%;
-    left: 14.05%;
+    margin: 0;
     padding-right: 50px;
+    font-size: 19px;
+    color: white;
+    font-weight: lighter;
 }
 
 .border-box {

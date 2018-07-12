@@ -12,19 +12,29 @@
   <link rel="stylesheet" href="style.css"/>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script> 
-  <script src="jquery.localscroll.js" type="text/javascript"></script> 
-  <script src="jquery.scrollTo.js" type="text/javascript"></script> 
   <script src="script.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbTVeaOOgzqpEoVNyXQ-d_uE8eyV6mRCU&callback=initMap"></script>
 </head>
 
 <body>
-    
-    <div id="header" class="header-display">
-        <div id="site-title-container">
+    <div id="nav">
+        <a href="#linktotop" id="site-title">START BOOTSTRAP</a>
+        <div class="wrapper">
+            <div id="nav-btn"><i class="fas fa-bars"></i></div>
+        <ul id="nav-list">
+            <li><a id="aboutlink" href="#linktoabout">ABOUT</a></li>
+            <li><a id="serviceslink" href="#linktoservices">SERVICES</a></li>
+            <li><a id="portfoliolink" href="#linktoportfolio">PORTFOLIO</a></li>
+            <li><a id="contactlink" href="#linktocontact">CONTACT</a></li>
+        </ul>
+    </div>
+    </div>
+
+        <!--UNCOMMENT WHEN WE USE JAVASCRIPT
+   
+      <div id="header" class="header-display">
             <a href="#linktotop" id="site-title">START BOOTSTRAP</a>
-        </div>
-        <div id="dropdown" onclick="dropdownclick()"> <!--onclick="dropdownclick()" for javascript implementation-->
+        <div id="dropdown" onclick="dropdownclick()">
             <i class="fas fa-bars"></i>
         </div>
         <div id="dropdown-links" class="dropdown-display">
@@ -39,7 +49,8 @@
             <a id="portfoliolink" href="#linktoportfolio">PORTFOLIO</a>
             <a id="contactlink" href="#linktocontact">CONTACT</a>
         </div>
-    </div>
+        </div>
+        -->
     <a name="linktotop"></a>
     <div id="sect1">
         <div id="sect1box">
@@ -72,7 +83,7 @@
             </li>
             <li>
                 <div class="circle-white"><i class="far fa-thumbs-up"></i></div>
-                <br><h5>Favorited</h5><p>Millions of users &lt3 Start Bootstrap!</p>
+                <br><h5>Favorited</h5><p>Millions of users ❤ Start Bootstrap!</p>
             </li>
             <li>
                 <div class="circle-white"><i class="far fa-moon" id="moon1"></i><i class="far fa-moon" id="moon2"></i></div>
@@ -130,8 +141,6 @@
             </div>
         </a>
         </div>
-
-
     </div>
 
     <div id="sect6">
