@@ -1,3 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    font-size: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.row > div {
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 1% 1%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-4 {
+    width: 33%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-2 {
+    width: 16%;
+}
+
+.col-1 {
+    width: 8%;
+}
+
 .btn {
     font-size: 15px;
     font-weight: bold;

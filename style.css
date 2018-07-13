@@ -162,7 +162,6 @@ html, body {
 }
 
 #sect1 {
-    
     /*background-image: url(https://blackrockdigital.github.io/startbootstrap-stylish-portfolio/img/bg-masthead.jpg);*/
     background-size: cover;
     background-repeat: no-repeat;
@@ -175,6 +174,7 @@ html, body {
     margin: 0;
     position: relative;
     overflow: hidden;
+    align-content: center;
 }
 
 #sect1 video {
@@ -186,6 +186,16 @@ html, body {
     object-fit: cover;
 }
 
+@supports (-ms-ime-align:auto) {
+    #sect1 video{
+        width: auto;
+    }
+    @media screen and (min-width: 1300px) {
+        #sect1 video {
+            height: auto;
+        }
+    }
+}
 
 #sect1box {
     font-size: 0;
@@ -255,30 +265,48 @@ html, body {
     padding-right: 0;
 }
 
-#sect3 li h5 {
+#sect3 h5 {
     margin-bottom: 8px;
 }
 
-#sect3 li p {
+#sect3 p {
     margin: 0;
     padding: 0;
 }
 
 #sect3 .circle-white {
-    margin: 10px 60px;
+    margin: 10px 0;
 }
 
-@media screen and (max-width: 1170px) {
+#sect3 .row > div {
+    padding: 20px 0;
+
+}
+
+
+@media screen and (max-width: 1250px) { /* 1170*/
+    #sect3 .row {
+        width: 100%;
+    }
+    #sect3 .col-md-6 {
+        width: 50%;
+    }
+    #sect3 .col-md-0 {
+        display: none;
+    }
     #sect3 li {
         padding-right: 8.47%;
         padding-left: 8.47%;
     }
 }
 
-@media screen and (max-width: 740px) {
-    #sect3 .circle-white {
-        margin: 10px 100px;
+@media screen and (max-width: 768px) {
+    #sect3 .col-lg-12 {
+        width: 100%;
     }
+    /*#sect3 .circle-white {
+        margin: 10px 100px;
+    }*/
     #sect3 li {
         padding-right: 5%;
         padding-left: 5%;
@@ -538,6 +566,141 @@ html, body {
     top: 19px;
     left: 22px;
 }
+
+#effects {
+    padding: 300px 0;
+    background: lightblue;
+    position: relative;
+}
+
+#effects .col-6 {
+    position: relative;
+}
+
+#effects > div {
+    display: inline-block;
+    padding-right: 50px;
+}
+
+#border {
+    background-color: black;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    height: 260px;
+    width: 410px;
+}
+#img-text {
+    z-index: 2;
+    visibility: hidden;
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#img-text #line {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    color: black;
+    width: 1px;
+    height: 1px;
+    transition: width 1s;
+    transition-timing-function: ease-out;
+    border: 1px solid black;
+}
+
+#img-text p {
+    
+    font-size: 1px;
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    color: black;
+    transition: transform 1s;
+    transition-timing-function: ease-out;
+}
+
+#img-text h2 {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    font-size: 1px;
+    transition: transform 1s;
+    transition-timing-function: ease-out;
+}
+
+#img-text button {
+    background-color: black;
+    color: white;
+    width: 10px;
+    height: 3px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    transition: transform 1s;
+    transition-timing-function: ease-out;
+    font-size: 1px;
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    text-align: center;
+    padding: 0;
+}
+
+#box-img{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 240px;
+    width: 390px;
+    background-color: #f0eeec;
+    overflow: hidden;
+    text-align: center;
+}
+
+#box-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 250px;
+    width: 400px;
+    transition: all 1s;
+    opacity: 1;
+    transition-timing-function: ease-out;
+}
+
+#border:hover img {
+    opacity: 0;
+    transform: scale(3);
+}
+
+#border:hover #img-text p {
+    visibility: visible;
+    transform: scale(16);
+}
+
+#border:hover #img-text h2 {
+    /*font-size: 24px;*/
+    transform: scale(24);
+    visibility: visible;
+}
+
+#border:hover #img-text #line {
+    visibility: visible;
+    width: 100px;
+}
+
+#border:hover #img-text button {
+    visibility: visible;
+    transform: scale(10);
+}
+
 h1 {
     font-size: .9em;
     font-weight: bold;
