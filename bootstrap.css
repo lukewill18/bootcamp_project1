@@ -55,9 +55,6 @@
     border-radius: 5px;
     border: none;
     transition-duration: 0.4s;
-}
-
-.btn:hover {
     cursor: pointer;
 }
 

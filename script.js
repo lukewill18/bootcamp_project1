@@ -9,3 +9,11 @@ function dropdownclick() {
     document.getElementById("dropdown-links").classList.toggle("show-dropdown");
     document.getElementById("header").classList.toggle("enlarge-header");
 }
+
+let navLinks = document.querySelectorAll("a[href^='#']");
+for(let i = 0; i < navLinks.length; ++i) {
+    navLinks[i].addEventListener("click", function(event) {
+        event.preventDefault();
+        document.querySelector("[name=" + this.getAttribute("href").slice(1) + "]").scrollIntoView({behavior: "smooth"});
+    });
+}

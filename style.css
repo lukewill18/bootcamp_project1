@@ -846,13 +846,31 @@ em {
     margin: 10px auto;
 }
 
+#pricing-row1 {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#pricing-row1 p {
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+}
+
+#pricing-row5 {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
 #pricing-row2, #pricing-row3, #pricing-row4, #pricing-row5 {
     height: 200px;
 }
 
 #pricing-table .row {
     position: relative;
-    border-radius: 5px;
+    overflow: hidden;
+    
 }
 
 #pricing-table .row > div {
@@ -891,10 +909,6 @@ em {
     background-color: #3b3d3d;
 }
 
-#pricing-row2 .col-4, #pricing-row2 .col-2 button {
-    background-color: #b4d674;
-}
-
 #pricing-row2 .col-6, #pricing-row4 .col-6 {
     background-color: #ededed;
 }
@@ -923,6 +937,10 @@ em {
 #pricing-table .col-2 h4 {
     color: black;
     font-weight: normal;
+}
+
+#pricing-row2 .col-4, #pricing-row2 .col-2 button {
+    background-color: #b4d674;
 }
 
 #pricing-row3 .col-4, #pricing-row3 .col-2 button {
@@ -983,20 +1001,23 @@ em {
 }
 
 #pricing-row2:hover, #pricing-row3:hover, #pricing-row4:hover, #pricing-row5:hover {
-    box-shadow: 0 10px 5px grey;
-    transform: scale(1.05);
+    box-shadow: 1px 3px 22px 0px rgba(77,77,77,1);
+    width: 102%;
+    margin-left: -15px;
     z-index: 100;
+    border: none;
+    border-radius: 5px;
 }
 
 #pricing-row2:hover .col-2 {
     background-color: #b4d674;
 }
 
-#pricing-row2:hover .col-2 h4 {
+#pricing-row2:hover .col-2 h4, #pricing-row3:hover .col-2 h4, #pricing-row4:hover .col-2 h4, #pricing-row5:hover .col-2 h4 {
     color: white;
 }
 
-#pricing-row2:hover button {
+#pricing-row2:hover button, #pricing-row3:hover button, #pricing-row4:hover button, #pricing-row5:hover button {
     background-color: black;
 }
 
@@ -1004,38 +1025,13 @@ em {
     background-color: #81d2db;
 }
 
-#pricing-row3:hover .col-2 h4 {
-    color: white;
-}
-
-#pricing-row3:hover button {
-    background-color: black;
-}
-
 #pricing-row4:hover .col-2 {
     background-color: #f7a90e;
-}
-
-#pricing-row4:hover .col-2 h4 {
-    color: white;
-}
-
-#pricing-row4:hover button {
-    background-color: black;
 }
 
 #pricing-row5:hover .col-2 {
     background-color: #ef5353;
 }
-
-#pricing-row5:hover .col-2 h4 {
-    color: white;
-}
-
-#pricing-row5:hover button {
-    background-color: black;
-}
-
 
 .greyed p{
     color: #cecece;
