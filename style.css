@@ -292,7 +292,9 @@ html, body {
         width: 50%;
     }
     .col-md-0 {
+        width: 0;
         display: none;
+        padding: 0;
     }
     .col-md-12 {
         width: 100%;
